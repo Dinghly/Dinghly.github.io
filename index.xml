@@ -7,8 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
     <copyright>Dinghly</copyright>
-    <lastBuildDate>Wed, 01 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 17 Feb 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://dinghly.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>https://dinghly.github.io/about/</link>
+      <pubDate>Sat, 17 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://dinghly.github.io/about/</guid>
+      <description>Hi, how are you? This homepage is to share my thoughts on physics and perhaps enlighten you. Also I want to record my journey into the realm of physics. This homepage may work as my portfolio.&#xA;I&amp;rsquo;m interested in simulating physical phenomena. Not everyone can simulate or let alone draw physical equations in their mind. To help people hold on to their physics degree, I&amp;rsquo;m planning to share simulation of few text level problem.</description>
+    </item>
     <item>
       <title>Telegram Bot for  GitHub Actions</title>
       <link>https://dinghly.github.io/posts/tg-gh/</link>
@@ -36,13 +43,6 @@
       <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
       <guid>https://dinghly.github.io/archives/</guid>
       <description></description>
-    </item>
-    <item>
-      <title>About</title>
-      <link>https://dinghly.github.io/about/</link>
-      <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
-      <guid>https://dinghly.github.io/about/</guid>
-      <description>Written in Go, Hugo is an open source static site generator available under the Apache Licence 2.0. Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.&#xA;Hugo makes use of a variety of open source projects including:&#xA;https://github.com/yuin/goldmark https://github.</description>
     </item>
     <item>
       <title>How to test dark mode?</title>
