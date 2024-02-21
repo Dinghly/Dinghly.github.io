@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html><head lang="en">
 	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Magnetic resonance - Rabi oscillation - Donghyo&#39;s Homepage</title><meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="How does spin 1/2 oscillate under a oscillating magnetic field? lets find out&#34;" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Magnetic resonance - Rabi&#39;s oscillation - Donghyo&#39;s Homepage</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="How does spin 1/2 oscillate under a oscillating magnetic field? lets find out" />
 	<meta property="og:image" content=""/>
-	<meta property="og:title" content="Magnetic resonance - Rabi oscillation" />
-<meta property="og:description" content="How does spin 1/2 oscillate under a oscillating magnetic field? lets find out&#34;" />
+	<meta property="og:title" content="Magnetic resonance - Rabi&#39;s oscillation" />
+<meta property="og:description" content="How does spin 1/2 oscillate under a oscillating magnetic field? lets find out" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://dinghly.github.io/posts/project1-spin/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-02-21T00:00:00+00:00" />
+<meta property="article:modified_time" content="2024-02-21T00:00:00+00:00" />
 
-
-
-<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Magnetic resonance - Rabi oscillation"/>
-<meta name="twitter:description" content="How does spin 1/2 oscillate under a oscillating magnetic field? lets find out&#34;"/>
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Magnetic resonance - Rabi&#39;s oscillation"/>
+<meta name="twitter:description" content="How does spin 1/2 oscillate under a oscillating magnetic field? lets find out"/>
 <script src="https://dinghly.github.io/js/feather.min.js"></script>
 	
 	
@@ -72,13 +72,33 @@
 <main>
 	<article>
 		<div class="title">
-			<h1 class="title">Magnetic resonance - Rabi oscillation</h1>
-			<div class="meta">Posted on Jan 1, 0001</div>
+			<h1 class="title">Magnetic resonance - Rabi&#39;s oscillation</h1>
+			<div class="meta">Posted on Feb 21, 2024</div>
 		</div>
 		
 
 		<section class="body">
-			<p>To be filled</p>
+			<h2 id="the-system-of-rabi-oscillation">The System of Rabi Oscillation</h2>
+<p>Neutral atom with spin 1/2 is immersed in the magnetic field of $\vec{B} = B_0 \hat{z}+B_1\left( cos(wt)\hat{x}+sin(wt)\hat{y}\right)$ where the magnetic field is rotating anti-clockwise with respect to z axis with angular frequency $w$. The the magnetic moment of the atom is</p>
+<p>$$\begin{equation}
+\hat{\mu} = \frac{e}{m}\hat{S} = \frac{e}{m}\frac{\hbar}{2}\hat{\sigma}
+\end{equation}$$</p>
+<p>The Hamiltonian of the system is then</p>
+<p>$$\begin{equation}
+\hat{H} = -\hat{\mu}\cdot\hat{B} = \frac{\hbar}{2} \begin{pmatrix} \Omega_0 &amp; \Omega_1 e^{-iwt} \\ \Omega_1 e^{iwt} &amp; -\Omega_0\end{pmatrix}
+\end{equation}$$</p>
+<p>where $\Omega_0 = \frac{eB_0}{m}$ and $\Omega_1 = \frac{eB_1}{m}$.
+We can then solve time-dependent Schrödinger</p>
+<p>$$\begin{equation}
+i\hbar\frac{d}{dx}\ket{\psi}=\hat{H}\ket{\psi}=\frac{\hbar}{2}\begin{pmatrix} \Omega_0 &amp; \Omega_1 e^{-iwt} \\ \Omega_1 e^{iwt} &amp; -\Omega_0\end{pmatrix}\begin{pmatrix} a(t)\\b(t) \end{pmatrix}
+\end{equation}$$</p>
+<p>where $\ket{\psi} = a(t)\ket{\uparrow}+b(t)\ket{\downarrow}$ is an arbitrary state vector written in basis of eigen state of operator $\hat{S}^2$ and $\hat{S_z}$. Expanding it, we get a coupled equation</p>
+<p>$$\begin{align} i\frac{d}{dt}a(t)=\frac{\Omega_0}{2}a(t)+\frac{\Omega_1}{2}e^{-iwt}b(t)\\ i\frac{d}{dt}b(t)=\frac{\Omega_1}{2}e^{iwt}a(t)+\frac{\Omega_0}{2}b(t) \end{align}$$</p>
+<p>Notice the time explicit dependence of the coefficient of each linear differential equations. This is because our Hamiltonian is not diagonalized and off diagonal terms gives time explicit terms(If we go back to the solid state physics, in the chapter tight binding model, off diagonal terms allow hamiltonian to evolve over time; electrons hop between atoms). We can get rid of the time explicit dependence by applying rotating operator to our state vector $\ket{\psi}$ such that</p>
+<p>$$\begin{equation}
+\ket{\widetilde{\psi}} = \hat{R_z}\ket{\psi} = e^{-iwt\hat{S_z}}\ket{\psi}
+\end{equation}$$</p>
+<p>To be continued&hellip;</p>
 
 		</section>
 

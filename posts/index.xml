@@ -7,13 +7,14 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
     <copyright>Dinghly</copyright>
+    <lastBuildDate>Wed, 21 Feb 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://dinghly.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Magnetic resonance - Rabi oscillation</title>
+      <title>Magnetic resonance - Rabi&#39;s oscillation</title>
       <link>https://dinghly.github.io/posts/project1-spin/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 21 Feb 2024 00:00:00 +0000</pubDate>
       <guid>https://dinghly.github.io/posts/project1-spin/</guid>
-      <description>To be filled</description>
+      <description>The System of Rabi Oscillation Neutral atom with spin 1/2 is immersed in the magnetic field of $\vec{B} = B_0 \hat{z}+B_1\left( cos(wt)\hat{x}+sin(wt)\hat{y}\right)$ where the magnetic field is rotating anti-clockwise with respect to z axis with angular frequency $w$. The the magnetic moment of the atom is&#xA;$$\begin{equation} \hat{\mu} = \frac{e}{m}\hat{S} = \frac{e}{m}\frac{\hbar}{2}\hat{\sigma} \end{equation}$$&#xA;The Hamiltonian of the system is then&#xA;$$\begin{equation} \hat{H} = -\hat{\mu}\cdot\hat{B} = \frac{\hbar}{2} \begin{pmatrix} \Omega_0 &amp;amp; \Omega_1 e^{-iwt} \\ \Omega_1 e^{iwt} &amp;amp; -\Omega_0\end{pmatrix} \end{equation}$$</description>
     </item>
   </channel>
 </rss>
