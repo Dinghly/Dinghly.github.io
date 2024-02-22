@@ -78,27 +78,71 @@
 		
 
 		<section class="body">
-			<h2 id="the-system-of-rabi-oscillation">The System of Rabi Oscillation</h2>
-<p>Neutral atom with spin 1/2 is immersed in the magnetic field of $\vec{B} = B_0 \hat{z}+B_1\left( cos(wt)\hat{x}+sin(wt)\hat{y}\right)$ where the magnetic field is rotating anti-clockwise with respect to z axis with angular frequency $w$. The the magnetic moment of the atom is</p>
+			<h2 id="the-system-of-rabi-oscillation">The system of Rabi oscillation</h2>
+<p>Neutral atom with spin 1/2 is immersed in the magnetic field of $\vec{B} = B_0 \hat{z}+B_1\left( cos(wt)\hat{x}+sin(wt)\hat{y}\right)$ where the magnetic field is rotating anti-clockwise with respect to z axis with angular frequency $w$. The the magnetic moment of the atom is,</p>
 <p>$$\begin{equation}
 \hat{\mu} = \frac{e}{m}\hat{S} = \frac{e}{m}\frac{\hbar}{2}\hat{\sigma}
 \end{equation}$$</p>
-<p>The Hamiltonian of the system is then</p>
+<p>The Hamiltonian of the system is then,</p>
 <p>$$\begin{equation}
 \hat{H} = -\hat{\mu}\cdot\hat{B} = \frac{\hbar}{2} \begin{pmatrix} \Omega_0 &amp; \Omega_1 e^{-iwt} \\ \Omega_1 e^{iwt} &amp; -\Omega_0\end{pmatrix}
 \end{equation}$$</p>
-<p>where $\Omega_0 = \frac{eB_0}{m}$ and $\Omega_1 = \frac{eB_1}{m}$.
-We can then solve time-dependent Schrödinger</p>
+<p>where $\Omega_0 = \frac{eB_0}{m}$ and $\Omega_1 = \frac{eB_1}{m}$.</p>
+<h3 id="solving-for-schroumldinger-equation">Solving for Schrödinger equation</h3>
+<p>To see how a state evolve over time, we solve time-dependent Schrödinger equation,</p>
 <p>$$\begin{equation}
 i\hbar\frac{d}{dx}\ket{\psi}=\hat{H}\ket{\psi}=\frac{\hbar}{2}\begin{pmatrix} \Omega_0 &amp; \Omega_1 e^{-iwt} \\ \Omega_1 e^{iwt} &amp; -\Omega_0\end{pmatrix}\begin{pmatrix} a(t)\\b(t) \end{pmatrix}
 \end{equation}$$</p>
-<p>where $\ket{\psi} = a(t)\ket{\uparrow}+b(t)\ket{\downarrow}$ is an arbitrary state vector written in basis of eigen state of operator $\hat{S}^2$ and $\hat{S_z}$. Expanding it, we get a coupled equation</p>
-<p>$$\begin{align} i\frac{d}{dt}a(t)=\frac{\Omega_0}{2}a(t)+\frac{\Omega_1}{2}e^{-iwt}b(t)\\ i\frac{d}{dt}b(t)=\frac{\Omega_1}{2}e^{iwt}a(t)+\frac{\Omega_0}{2}b(t) \end{align}$$</p>
-<p>Notice the time explicit dependence of the coefficient of each linear differential equations. This is because our Hamiltonian is not diagonalized and off diagonal terms gives time explicit terms(If we go back to the solid state physics, in the chapter tight binding model, off diagonal terms allow hamiltonian to evolve over time; electrons hop between atoms). We can get rid of the time explicit dependence by applying rotating operator to our state vector $\ket{\psi}$ such that</p>
+<p>where $\ket{\psi} = a(t)\ket{\uparrow}+b(t)\ket{\downarrow}$ is an arbitrary state vector written in basis of eigen state of operator $\hat{S}^2$ and $\hat{S_z}$. Expanding it, we get a coupled equation,</p>
+<p>$$\begin{align}
+i\frac{d}{dt}a(t)=\frac{\Omega_0}{2}a(t)+\frac{\Omega_1}{2}e^{-iwt}b(t)\\ i\frac{d}{dt}b(t)=\frac{\Omega_1}{2}e^{iwt}a(t)+\frac{\Omega_0}{2}b(t)
+\end{align}$$</p>
+<p>Notice the time explicit dependence of the coefficient of each linear differential equations. This is because our Hamiltonian is not diagonalized and these off diagonal terms give time explicitly dependent terms(If we go back to the solid state physics, in the chapter tight binding model, off diagonal terms allow hamiltonian to evolve over time; electrons hop between atoms). We can get rid of the time explicit dependence by applying rotating operator to our state vector $\ket{\psi}$ such that,</p>
 <p>$$\begin{equation}
-\ket{\widetilde{\psi}} = \hat{R_z}\ket{\psi} = e^{-iwt\hat{S_z}}\ket{\psi}
+\ket{\widetilde{\psi}} = \hat{R_z}\ket{\psi} = e^{-iwt\hat{S_z}/\hbar}\ket{\psi}
 \end{equation}$$</p>
-<p>To be continued&hellip;</p>
+<p>state vector under rotation becomes,</p>
+<p>$$\begin{equation}
+\begin{pmatrix}
+\widetilde{a}(t)\\ \widetilde{b}(t)
+\end{pmatrix} =
+\begin{pmatrix}
+a(t)e^{iwt/2}\\ b(t)e^{-iwt/2}
+\end{pmatrix}
+\end{equation}$$</p>
+<p>$$\begin{align}
+a(t) = \widetilde{a}(t)e^{-iwt/2} \\
+b(t) = \widetilde{b}(t)e^{iwt/2}
+\end{align}$$</p>
+<p>By subsituting equation 8 and 9 to our coupled equation, it becomes,</p>
+<p>$$\begin{align}
+i\frac{d}{dt}\widetilde{a} = -\frac{\Delta}{2}\widetilde{a}(t)+\frac{\Omega_1}{2}\widetilde{b}(t) \\
+i\frac{d}{dt}\widetilde{b} = \frac{\Omega_1}{2}\widetilde{a}(t)+\frac{\Delta}{2}\widetilde{b}(t) \\
+\end{align}$$</p>
+<p>where $\Delta = \omega - \Omega_0$.</p>
+<p>This coupled equation can be solved by either finding eigenvalue or elimination method.</p>
+<p>Solution is then,</p>
+<p>$$\begin{gather}
+\widetilde{a}(t) = C_+e^{i\Omega t/2}+C_-e^{-i\Omega t/2}\\
+\widetilde{b}(t) = -\frac{\Omega-\Delta}{\Omega_1}C_+e^{i\Omega t/2}+\frac{\Omega+\Delta}{\Omega_1}C_-e^{-i\Omega t/2}
+\end{gather}$$
+and
+$$\begin{gather}
+a(t) = \left (C_+e^{i\Omega t/2}+C_-e^{-i\Omega t/2}\right )e^{-iwt/2}\\
+b(t) = \left (-\frac{\Omega-\Delta}{\Omega_1}C_+e^{i\Omega t/2}+\frac{\Omega+\Delta}{\Omega_1}C_-e^{-i\Omega t/2} \right )e^{iwt/2}
+\end{gather}$$</p>
+<h4 id="initial-condition">Initial condition</h4>
+<p>The coefficient $C_+$ and $C_-$ are found by setting initial condition. The generalized value of the coefficient are,</p>
+<p>$$\begin{gather}
+C_+ = \frac{a(0)(\omega_1+\omega_2)-b(0)}{2\omega_1}\\
+C_- = \frac{-a(0)(\omega_1-\omega_2)+b(0)}{2\omega_1}
+\end{gather}$$</p>
+<p>where $\omega_1$ and $\omega_2$ are $\frac{\Omega}{\Omega_1}$ and $\frac{\Delta}{\Omega_1}$. If the state vector at t = 0 is spin up state, $C_+$ and $C_-$ are,</p>
+<p>$$\begin{gather}
+C_+ = \frac{\omega_1+\omega_2}{2\omega_1}\\
+C_- = \frac{\omega_1-\omega_2}{2\omega_1}
+\end{gather}$$</p>
+<h5 id="simulation">Simulation</h5>
 
 		</section>
 
