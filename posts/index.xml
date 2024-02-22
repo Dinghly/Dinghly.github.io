@@ -7,8 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
     <copyright>Dinghly</copyright>
-    <lastBuildDate>Wed, 21 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 22 Feb 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://dinghly.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Conductivity</title>
+      <link>https://dinghly.github.io/posts/project2-conductivity/</link>
+      <pubDate>Thu, 22 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://dinghly.github.io/posts/project2-conductivity/</guid>
+      <description>To be continued dfdfd</description>
+    </item>
     <item>
       <title>Magnetic resonance - Rabi&#39;s oscillation</title>
       <link>https://dinghly.github.io/posts/project1-spin/</link>
