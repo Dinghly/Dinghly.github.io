@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Physics on Donghyo&#39;s Homepage</title>
+    <link>https://dinghly.github.io/docs/physics/</link>
+    <description>Recent content in Physics on Donghyo&#39;s Homepage</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Dinghly</copyright>
+    <lastBuildDate>Wed, 21 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://dinghly.github.io/docs/physics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Magnetic resonance - Rabi&#39;s oscillation</title>
+      <link>https://dinghly.github.io/docs/physics/project1-spin/</link>
+      <pubDate>Wed, 21 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://dinghly.github.io/docs/physics/project1-spin/</guid>
+      <description>The system of Rabi oscillation # Neutral atom with spin 1/2 is immersed in the magnetic field of $\vec{B} = B_0 \hat{z}+B_1\left( \cos(\omega t)\hat{x}+\sin(wt)\hat{y}\right)$ where the magnetic field is rotating anti-clockwise with respect to z axis with angular frequency $\omega$. The the magnetic moment of the atom is,&#xA;$$\begin{equation} \hat{\mu} = \frac{e}{m}\hat{S} = \frac{e}{m}\frac{\hbar}{2}\hat{\sigma} \end{equation}$$&#xA;The Hamiltonian of the system is then,&#xA;$$\begin{equation} \hat{H} = -\hat{\mu}\cdot\hat{B} = \frac{\hbar}{2} \begin{pmatrix} \Omega_0 &amp;amp; \Omega_1 e^{-iwt} \\ \Omega_1 e^{iwt} &amp;amp; -\Omega_0\end{pmatrix} \end{equation}$$</description>
+    </item>
+  </channel>
+</rss>

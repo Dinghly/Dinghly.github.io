@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>介绍 on Donghyo&#39;s Homepage</title>
+    <link>https://dinghly.github.io/zh/</link>
+    <description>Recent content in 介绍 on Donghyo&#39;s Homepage</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <copyright>Dinghly</copyright>
+    <atom:link href="https://dinghly.github.io/zh/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
