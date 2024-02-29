@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>What I do in the Lab on Donghyo&#39;s Homepage</title>
+    <link>https://dinghly.github.io/docs/what_i_do_in_the_lab/</link>
+    <description>Recent content in What I do in the Lab on Donghyo&#39;s Homepage</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Dinghly</copyright>
+    <atom:link href="https://dinghly.github.io/docs/what_i_do_in_the_lab/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
