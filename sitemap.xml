@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://dinghly.github.io/docs/physics/project2-conductivity/</loc>
+    <loc>https://dinghly.github.io/docs/physics/project0_my_plan/</loc>
     <lastmod>2024-02-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dinghly.github.io/docs/physics/</loc>
@@ -11,10 +11,13 @@
     <loc>https://dinghly.github.io/posts/sleeping/</loc>
     <lastmod>2024-02-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dinghly.github.io/docs/physics/project1-spin/</loc>
+    <loc>https://dinghly.github.io/docs/physics/project1_magnetic_resonance_rabis-oscillation/</loc>
     <lastmod>2024-02-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dinghly.github.io/docs/what_i_do_in_the_lab/</loc>
+  </url><url>
+    <loc>https://dinghly.github.io/docs/physics/project2_phonon_visualiztion/</loc>
+    <lastmod>2024-02-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dinghly.github.io/</loc>
     <lastmod>2024-02-28T00:00:00+00:00</lastmod>
