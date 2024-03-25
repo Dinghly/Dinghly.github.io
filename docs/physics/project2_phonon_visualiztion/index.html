@@ -19,7 +19,7 @@
 <link rel="canonical" href="https://dinghly.github.io/docs/physics/project2_phonon_visualiztion/">
 <link rel="stylesheet" href="/book.min.897a3f610126f81432849826cfaa313c29e73c7e83ce0178bcc701fe3e4c4959.css" integrity="sha256-iXo/YQEm&#43;BQyhJgmz6oxPCnnPH6DzgF4vMcB/j5MSVk=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.77cfec817dc6bc2f78dd13fa5dafdef4d36e3adb2bded0a2ad04659df8a713e6.js" integrity="sha256-d8/sgX3GvC943RP6Xa/e9NNuOtsr3tCirQRlnfinE&#43;Y=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.c84bc3859ee2f63f33f11dcff3fa84fd0f0d35f5fe503336f417a606aad33ffb.js" integrity="sha256-yEvDhZ7i9j8z8R3P8/qE/Q8NNfX&#43;UDM29BemBqrTP/s=" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8" crossorigin="anonymous"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
@@ -243,12 +243,16 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown book-article"><h2 id="classical-representation-of-lattice-vibration">
-  Classical representation of lattice vibration
-  <a class="anchor" href="#classical-representation-of-lattice-vibration">#</a>
+  <article class="markdown book-article"><h1 id="visualization-of-phonons">
+  Visualization of phonons
+  <a class="anchor" href="#visualization-of-phonons">#</a>
+</h1>
+<p>Phonon is a quasi particle which the number of phonons in the system corresponds to the quantum excitation of vibration. This concept of particle and quantization of excitation of vibration is from quantum mechanics and quantum field theory and it help us understand the underlying physics of heat capacity of solids. However, I think phonons are not explained well enough in the textbooks besides that they are bosonic particles consequence of qunatum mechanics.</p>
+<h2 id="lattice-vibration-in-classical-physics">
+  Lattice vibration in classical physics
+  <a class="anchor" href="#lattice-vibration-in-classical-physics">#</a>
 </h2>
-<p>Phonon is a quasi particle which the number of phonons in the system corresponds to the quantum excitation of vibration. This concept of particle and quantization of excitation of vibration is from quantum mechanics and quantum field theory. This concept of phonon help us understand the underlying physics of specific heat capacity of solids. However, I was surprised how the concept of phonon could just as well be derived classically from Newtons law of motion $F=ma$.</p>
-<p>Lets first understand lattice vibration classically. Lets say we have a one dimensional lattice of atoms spaced equally by a distance $a$ and are connected with a spring of spring constant $\kappa$. Potential $V_{tot}$ can be then written as,</p>
+<p>I was surprised how the concept of phonon could just as well be derived classically from Newtons law of motion $F=ma$. Lets go through how much of lattice vibration can be understood from classical mechanics. Lets say we have one dimensional lattice of atoms spaced equally by a distance $a$ and are connected with a spring of spring constant $\kappa$. Potential $V_{tot}$ can be then written as,</p>
 <p>$$\begin{equation}
 V_{tot} =\sum_{\ell}^{N}\frac{\kappa}{2}\left(x_{\ell+1}-x_\ell-a \right)^{2}
 \end{equation}$$</p>
@@ -259,8 +263,49 @@ V_{tot} = \sum_{\ell}^{N}\frac{\kappa}{2}\left(q_{\ell+1}-q_\ell \right)^{2}
 <p>$$\begin{equation}
 F_\ell = -\frac{dV_\ell}{dq_\ell} = \kappa(q_{\ell+1}+q_{\ell-1}-2q_\ell) = m\ddot{q_\ell}
 \end{equation}$$</p>
-<p>Our solution is then,</p>
-<p>$$\omega(k) = 2\sqrt{\frac{\kappa}{m}}\left| \sin(ka/2) \right|$$</p>
+<p>As, usual, solution to simple harmonic oscillator is,
+$$\begin{equation}
+q_\ell = Ae^{i\omega t-ikla}
+\end{equation}$$</p>
+<p>If we plug this soltion into equation 3, we obtain the result called dispersion relation,</p>
+<p>$$\begin{equation}
+\omega(k) = 2\sqrt{\frac{\kappa}{m}}\left| \sin(ka/2) \right|
+\end{equation}$$</p>
+<p>This $\omega$ shows the relationship between the angular frequency of lattice vibration and wave number $k$.</p>
+<p><img src="/image/dispersion_relation_range_pm4pi.png#center" alt="Fig 1" />
+From the above image, we can see that $\omega(k)$ is periodic in $k = k\pm\frac{2\pi}{a}$. This is because if we look at the solution $q_\ell$, shifting $k \rightarrow k\pm\frac{2\pi}{a}$ still give us the same osillation we had before shifting. This is actually a consequence of having a discrete sets of points instead of continuous sets of points. What this means is that we can not distinguish whether our value of wave vector is $k$ or $k\pm\frac{2\pi j}{a}$ just by looking at the wave. So we can generalize that shifting $k$ to any $k \pm \frac{2\pi}{a}j$ give us the same wave with $j$ a integer.</p>
+<h3 id="number-of-modes">
+  Number of modes
+  <a class="anchor" href="#number-of-modes">#</a>
+</h3>
+<p>We have assumed that our lattice has a periodic boundary such that the first and the last atoms are conneted to each other such that $x_l = x_{l+N}$. Therefore the possible values of $k$ will be,</p>
+<p>$$\begin{equation}
+k = \frac{2\pi j}{Na} = \frac{2\pi j}{L}
+\end{equation}$$</p>
+<p>Now, these $k$ corresponds to the momentum vector of normal mode of our 1D lattice.</p>
+<p>Because adding $\frac{2\pi j}{a}$ gives the same oscillation of wave, we will only care about value of $k$&rsquo;s within the first brillouin zone. For our purpose, we let our range of brillouin zone to be $0&lt;k\leq \frac{2\pi}{a}$, then we can count the total number of modes of our lattice,</p>
+<p>$$\begin{equation}
+\frac{2\pi/a}{2\pi/Na} = N
+\end{equation}$$</p>
+<p>where the numerator is the Range of $k$ and the denominator is the distance between the neighboring $k$. Recall that when we were first learning about the Debye&rsquo;s and Einsteins model in calculating the heat capacity of solid, the total number of modes of our solid was N for each dimension(3N for 3D) and the boundary of first brillouin zone corresponds to $k_{Debye}$ which is the Debye&rsquo;s cut off frequency.</p>
+<h2 id="heading">
+  
+  <a class="anchor" href="#heading">#</a>
+</h2>
+<p>From the classical physics, we were able to find three important points
+$$\begin{gather}
+q_\ell = Ae^{i\omega t-ikla} \\
+\omega(k) = 2\sqrt{\frac{\kappa}{m}}\left| \sin(ka/2) \right| \\
+k = \frac{2\pi j}{Na} = \frac{2\pi j}{L}
+\end{gather}$$
+It seems that we have every tools that we need to analyse our solid&rsquo;s heat capacity, oscillation modes and property of our waves.
+Just like what Debye did, the energy of the mode at angular frequency $\omega$ is,</p>
+<p>$$\begin{equation} E_{n_{k}} = \hbar \omega(k)\left (n_{k}+\frac{1}{2}\right )\end{equation}$$</p>
+<p>Mode $k$ can be excited by increasing the qunatum number $n$ which this quantum excitation of normal mode is known as phonon. If $n_k$ = 3, it is said that there are three phonons in mode $k$. The exciation of normal mode said to increase the amplitude of oscillation but it is not clearly seen how it actually increase the amplitude of oscillation. Hence it seems that we need to take the analysis of lattice vibration in the realm of quantum.</p>
+<h2 id="lattice-vibration-in-quantum-physics">
+  Lattice vibration in quantum physics
+  <a class="anchor" href="#lattice-vibration-in-quantum-physics">#</a>
+</h2>
 </article>
  
       

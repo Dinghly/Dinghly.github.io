@@ -28,7 +28,7 @@
       <link>https://dinghly.github.io/docs/physics/project2_phonon_visualiztion/</link>
       <pubDate>Wed, 21 Feb 2024 00:00:00 +0000</pubDate>
       <guid>https://dinghly.github.io/docs/physics/project2_phonon_visualiztion/</guid>
-      <description>Classical representation of lattice vibration # Phonon is a quasi particle which the number of phonons in the system corresponds to the quantum excitation of vibration. This concept of particle and quantization of excitation of vibration is from quantum mechanics and quantum field theory. This concept of phonon help us understand the underlying physics of specific heat capacity of solids. However, I was surprised how the concept of phonon could just as well be derived classically from Newtons law of motion $F=ma$.</description>
+      <description>Visualization of phonons # Phonon is a quasi particle which the number of phonons in the system corresponds to the quantum excitation of vibration. This concept of particle and quantization of excitation of vibration is from quantum mechanics and quantum field theory and it help us understand the underlying physics of heat capacity of solids. However, I think phonons are not explained well enough in the textbooks besides that they are bosonic particles consequence of qunatum mechanics.</description>
     </item>
   </channel>
 </rss>
