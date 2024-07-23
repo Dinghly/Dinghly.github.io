@@ -14,7 +14,7 @@
       <link>https://dinghly.github.io/docs/physics/project0_my_plan/</link>
       <pubDate>Wed, 21 Feb 2024 00:00:00 +0000</pubDate>
       <guid>https://dinghly.github.io/docs/physics/project0_my_plan/</guid>
-      <description> Conductivity with quantum mechanics How coupled harmonic oscillation is seen with quantum mechanics - How wavefunction move in position and what does n quantum number mean apart from excited state? Difference between Rabi&amp;rsquo;s oscillation and Ferromagnetic resonance Rotation in quantum mechanics And more&amp;hellip; </description>
+      <description> Conductivity with quantum mechanics How coupled harmonic oscillation is seen with quantum mechanics - How wavefunction move in position and what does n quantum number mean apart from excited state? Difference between Rabi&amp;rsquo;s oscillation and Ferromagnetic resonance Rotation in quantum mechanics hello And more&amp;hellip; </description>
     </item>
     <item>
       <title>잠자기</title>
@@ -29,6 +29,13 @@
       <pubDate>Wed, 21 Feb 2024 00:00:00 +0000</pubDate>
       <guid>https://dinghly.github.io/docs/physics/project1_magnetic_resonance_rabis-oscillation/</guid>
       <description>The system of Rabi oscillation # Neutral atom with spin 1/2 is immersed in the magnetic field of $\vec{B} = B_0 \hat{z}+B_1\left( \cos(\omega t)\hat{x}+\sin(\omega t)\hat{y}\right)$ where the magnetic field is rotating anti-clockwise with respect to z axis with angular frequency $\omega$. The the magnetic moment of the atom is,&#xA;$$\begin{equation} \hat{\mu} = \frac{e}{m}\hat{S} = \frac{e}{m}\frac{\hbar}{2}\hat{\sigma} \end{equation}$$&#xA;The Hamiltonian of the system is then,&#xA;$$\begin{equation} \hat{H} = -\hat{\mu}\cdot\hat{B} = \frac{\hbar}{2} \begin{pmatrix} \Omega_0 &amp;amp; \Omega_1 e^{-i\omega t} \\ \Omega_1 e^{i\omega t} &amp;amp; -\Omega_0\end{pmatrix} \end{equation}$$</description>
+    </item>
+    <item>
+      <title>Raspberrypi</title>
+      <link>https://dinghly.github.io/docs/what_i_do_in_the_lab/raspberrypi/</link>
+      <pubDate>Wed, 21 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://dinghly.github.io/docs/what_i_do_in_the_lab/raspberrypi/</guid>
+      <description></description>
     </item>
     <item>
       <title>Visualization of Phonons</title>

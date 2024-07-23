@@ -7,6 +7,14 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Dinghly</copyright>
+    <lastBuildDate>Wed, 21 Feb 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://dinghly.github.io/docs/what_i_do_in_the_lab/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Raspberrypi</title>
+      <link>https://dinghly.github.io/docs/what_i_do_in_the_lab/raspberrypi/</link>
+      <pubDate>Wed, 21 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://dinghly.github.io/docs/what_i_do_in_the_lab/raspberrypi/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>
